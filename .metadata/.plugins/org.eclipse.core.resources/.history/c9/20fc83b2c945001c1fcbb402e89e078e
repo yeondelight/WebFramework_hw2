@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Please Sign In</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="s">
+	<link href="https://getbootstrap.com/docs/4.0/scasmples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<form class="form-signin" method="post" action="/helloSpringMVC/login">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<p>
+				<label for="username" class="sr-only">Username</label>
+				<label for="password" >Password</label>
+		</form>
+	</div>
+</body>
+</html>

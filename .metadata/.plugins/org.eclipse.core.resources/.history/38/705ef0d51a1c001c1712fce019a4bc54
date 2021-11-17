@@ -1,0 +1,11 @@
+package kr.ac.hansung.cse;
+
+public class Cat implements AnimalType {
+
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package kr.ac.hansung.cse.model;
+
+import lombok.Getter;
+
+@Getter
+public class CourseBySemester {
+	
+	private int year;
+	private int semester;
+	private int sum;
+
+}

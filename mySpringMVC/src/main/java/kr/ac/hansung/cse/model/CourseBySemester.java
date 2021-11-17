@@ -1,0 +1,21 @@
+package kr.ac.hansung.cse.model;
+
+import lombok.Getter;
+import lombok.Setter;
+
+
+//학년/학기별 이수 총 학점을 보여주기 위한 class CourseBySemester
+@Getter
+@Setter
+public class CourseBySemester {
+
+	private int year;
+	private int semester;
+	private int sum;
+
+	public CourseBySemester(int year, int semester, int sum) {
+		this.year = year;
+		this.semester = semester;
+		this.sum = sum;
+	}
+}

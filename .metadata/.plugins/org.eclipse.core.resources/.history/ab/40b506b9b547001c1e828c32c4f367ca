@@ -1,0 +1,6 @@
+package kr.ac.hansung.cse.model;
+
+@Getter
+public class CourseBySemester {
+
+}
