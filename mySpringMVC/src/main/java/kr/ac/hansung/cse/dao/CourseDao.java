@@ -51,10 +51,32 @@ public class CourseDao {
 	}
 	
 	// CRUD method : Read
-	// query and return a single object
-	public Course getCourse(int year, int semester) {
-		String sqlStatement = "select * from courses where year=? and semester=?";
+	// query for single object : find by id
+	public Course getCourse(int id) {
+		String sqlStatement = "select * from courses where id=?";
 		return jdbcTemplate.queryForObject(sqlStatement, new RowMapper<Course>() {
+				@Override
+			public Course mapRow(ResultSet rs, int rowNum) throws SQLException {
+				Course course = new Course();
+				course.setId(rs.getInt("id"));
+				course.setYear(rs.getInt("year"));
+				course.setSemester(rs.getInt("semester"));
+				course.setCode(rs.getString("code"));
+				course.setName(rs.getString("name"));
+				course.setProfessor(rs.getString("professor"));
+				course.setType(rs.getString("type"));
+				course.setCredit(rs.getInt("credit"));
+				return course;
+			}
+				
+		}, new Object[]{id});
+	}
+	
+	// CRUD method : Read
+	// query for return multiple object
+	public List<Course> getCourse(int year, int semester) {
+		String sqlStatement = "select * from courses where year=? and semester=?";
+		return jdbcTemplate.query(sqlStatement, new RowMapper<Course>() {
 
 			@Override
 			public Course mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -73,6 +95,7 @@ public class CourseDao {
 		}, new Object[]{year, semester});
 	}
 	
+	// CRUD method : Read
 	// query and return a multiple object
 	public List<Course> getCourses() {
 		String sqlStatement = "select * from courses";

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;kr.ac.hansung.cse.filter&apos; to &apos;mySpringMVC/src/main/java/kr.ac.hansung.cse&apos;&#x0D;&#x0A;- Original project: &apos;helloSpringMVC&apos;&#x0D;&#x0A;- Destination element: &apos;mySpringMVC/src/main/java/kr.ac.hansung.cse&apos;&#x0D;&#x0A;- Original element: &apos;helloSpringMVC/src/main/java/kr.ac.hansung.cse.filter&apos;" description="Copy package" destination="=mySpringMVC/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.hansung.cse" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.hansung.cse.filter" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1637205640753" version="1.0"/>
+</session>

@@ -21,7 +21,13 @@
 				<td><c:out value="${sums.getYear()}"/></td>
 				<td><c:out value="${sums.getSemester()}"/></td>
 				<td><c:out value="${sums.getCredit()}"/></td>
-				<td></td>
+				<td>
+					<c:url value="/courses" var="url">
+						<c:param name="year" value="${sums.getYear()}" />
+						<c:param name="semester" value="${sums.getSemester()}" />
+					</c:url>
+					<a href="${url}">링크</a>
+				</td>
 			</tr>
 			</c:forEach>
 		</tbody>

@@ -27,11 +27,12 @@
 		<intercept-url pattern="/" access="permitAll" />
 		<intercept-url pattern="/login" access="permitAll" />
 		<intercept-url pattern="/intro" access="permitAll" />
-		<intercept-url pattern="/courseInfo" access="hasRole('ROLE_USER')" />
 		<intercept-url pattern="/courses" access="hasRole('ROLE_USER')" />
 		<intercept-url pattern="/doCreate" access="hasRole('ROLE_USER')" />
+		<intercept-url pattern="/courseInfo" access="hasRole('ROLE_USER')" />
+		<intercept-url pattern="/detailCourse" access="hasRole('ROLE_USER')" />
 		<intercept-url pattern="/createCourse" access="hasRole('ROLE_USER')" />
-		<intercept-url pattern="/reviewCreate" access="hasRole('ROLE_USER')" />
+		<intercept-url pattern="/courseCreated" access="hasRole('ROLE_USER')" />
 		<intercept-url pattern="/resources/**" access="permitAll" />
 		<intercept-url pattern="/**" access="denyAll"  />
 		<form-login login-page="/login" authentication-failure-url="/login?error" />

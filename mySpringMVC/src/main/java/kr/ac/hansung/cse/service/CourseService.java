@@ -27,4 +27,7 @@ public class CourseService {
 		return courseDao.getSums();
 	}
 
+	public List<Course> getCourse(int year, int semester) {
+		return courseDao.getCourse(year, semester);
+	}
 }

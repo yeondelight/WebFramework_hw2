@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>학기별 수강 내역 조회</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/table.css">
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>년도</th>
+				<th>학기</th>
+				<th>교과목명</th>
+				<th>교과구분</th>
+				<th>담당교수</th>
+				<th>학점</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="course" items="${course}">
+			<tr>
+				<td><c:out value="${course.getYear()}"/></td>
+				<td><c:out value="${course.getSemester()}"/></td>
+				<td><c:out value="${course.getName()}"/></td>
+				<td><c:out value="${course.getType()}"/></td>
+				<td><c:out value="${course.getProfessor()}"/></td>
+				<td><c:out value="${course.getCredit()}"/></td>
+			</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+</body>
+</html>
