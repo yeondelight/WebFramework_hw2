@@ -1,0 +1,17 @@
+127.0.0.1 - - [22/Nov/2021:12:47:20 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:47:21 +0900] "GET /mySpringMVC/ HTTP/1.1" 200 364
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:47:21 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:47:23 +0900] "GET /mySpringMVC/intro HTTP/1.1" 200 165
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:47:23 +0900] "GET /mySpringMVC/resources/img/curriculum.png HTTP/1.1" 200 155557
+127.0.0.1 - - [22/Nov/2021:12:48:32 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:48:33 +0900] "GET /mySpringMVC/WEB-INF/views/intro.jsp HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:48:38 +0900] "GET /mySpringMVC/WEB-INF/views/intro.jsp HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:48:48 +0900] "GET /mySpringMVC/ HTTP/1.1" 200 364
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:48:50 +0900] "GET /mySpringMVC/intro HTTP/1.1" 200 302
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:48:50 +0900] "GET /mySpringMVC/resources/img/curriculum.png HTTP/1.1" 200 155557
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:48:56 +0900] "GET /mySpringMVC/intro HTTP/1.1" 200 302
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:48:56 +0900] "GET /mySpringMVC/resources/img/curriculum.png HTTP/1.1" 200 155557
+127.0.0.1 - - [22/Nov/2021:12:53:20 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:53:21 +0900] "GET /mySpringMVC/ HTTP/1.1" 200 364
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:53:24 +0900] "GET /mySpringMVC/intro HTTP/1.1" 200 307
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:12:53:24 +0900] "GET /mySpringMVC/resources/img/curriculum.png HTTP/1.1" 200 155557
